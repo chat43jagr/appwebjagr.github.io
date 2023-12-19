@@ -1,18 +1,21 @@
-/*  Inicializa Firebase con la
- * configuración del proyecto.
- * Revisa la configuración en tu
- * servidor de Firebase y cópiala
- * aquí sustituyendo los
- * asteriscos. Los campos deben
- * quedar igual que en tu
- * servidor. */
-// @ts-ignore
-firebase.initializeApp({
-    apiKey: "AIzaSyDzZxk913MUi3ESjLwNK14W0t1c6HgUOWE",
-    authDomain: "bdfalumnox.firebaseapp.com",
-    projectId: "bdfalumnox",
-    storageBucket: "bdfalumnox.appspot.com",
-    messagingSenderId: "1002536188546",
-    appId: "1:1002536188546:web:cfa9fb33aec119e7fc529b",
-    measurementId: "G-5HHSLWQ24J"
-});
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCFGT8GVRT9lsmomR-l4Skj-VXV26E4s9U",
+  authDomain: "appwebjagr.firebaseapp.com",
+  projectId: "appwebjagr",
+  storageBucket: "appwebjagr.appspot.com",
+  messagingSenderId: "779635902312",
+  appId: "1:779635902312:web:c3365bc925edad7a7638dd",
+  measurementId: "G-5TPS3HKZTK"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
